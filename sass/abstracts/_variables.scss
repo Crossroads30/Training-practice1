@@ -1,20 +1,10 @@
-$color:green;
-$padding:2rem;
-$mobile: 375px;
-$tablet: 768px;
-@mixin flex ($align: center) {// миксин
+
+@mixin flex ($align: center, $flex-dir: column) {// миксин
+  flex-direction: $flex-dir;
   display: flex;
   align-items: $align;
   justify-content: $align;
 }
-%table {// плэйсхолдер
-  background-color: azure;
-  color: #000;
-  border-radius: 1rem;
-  tr {
-    color: blue;
-    td {
-      color: blueviolet;
-    }
-  }
-}
+
+$pet-card-bgc: rgb(189, 188, 187);
+$btn-col: #f1CDB3;

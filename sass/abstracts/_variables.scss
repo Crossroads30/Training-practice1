@@ -1,0 +1,20 @@
+$color:green;
+$padding:2rem;
+$mobile: 375px;
+$tablet: 768px;
+@mixin flex ($align: center) {// миксин
+  display: flex;
+  align-items: $align;
+  justify-content: $align;
+}
+%table {// плэйсхолдер
+  background-color: azure;
+  color: #000;
+  border-radius: 1rem;
+  tr {
+    color: blue;
+    td {
+      color: blueviolet;
+    }
+  }
+}

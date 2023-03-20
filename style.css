@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aquamarine;
+  font-style: italic;
+  height: 100vh; }
+
+body h1 {
+  font-size: 5em;
+  background: green;
+  padding: 2rem; }
+
+.table1, .table2 {
+  background-color: azure;
+  color: #000;
+  border-radius: 1rem; }
+  .table1 tr, .table2 tr {
+    color: blue; }
+    .table1 tr td, .table2 tr td {
+      color: blueviolet; }
+
+.table2 th {
+  color: burlywood; }
+
+/* This comment will appear in css file */
+button {
+  background-color: green; }
+  button:hover {
+    background-color: #004d00; }
+
+.block1 {
+  padding: 1rem; }
+  @media screen and (max-width: 375px) {
+    .block1 {
+      color: brown; } }
+
+.block1 {
+  padding: 15px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,71 @@
+//1. install SASS
+//npm install -g sass
+//2.Compile SASS to CSS
+//sass source/stylesheets/index.scss build/stylesheets/imdex.css
+
+@import 'abstracts/variables';
+@import 'vendors/bootstrap';
+@import 'base/reset';
+@import 'layout/header';
+@import 'components/buttons';
+@import 'pages/home';
+@import 'themes/theme';
+
+//$color:green;// переменные
+
+//@mixin flex ($align: center) {// миксин
+//  display: flex;
+//  align-items: $align;
+//  justify-content: $align;
+//}
+body {
+  @include flex ();
+  color: aquamarine;
+  font-style: italic;
+  height: 100vh;
+}
+body h1 {
+  font-size: 5em;
+  background: $color;
+  padding: $padding;
+}
+//%table {// плэйсхолдер
+//  background-color: azure;
+//  color: #000;
+//  border-radius: 1rem;
+//  tr {
+//    color: blue;
+//    td {
+//      color: blueviolet;
+//    }
+//  }
+//}
+.table1 {
+  @extend %table;
+}
+.table2 {
+  @extend %table;
+  th {
+    color: burlywood;
+  }
+}
+/* This comment will appear in css file */
+// This comment will not appear in css file
+button {
+  background-color: $color;
+  &:hover {//парент селектора
+    background-color: darken($color, 10%);// встроенная функция
+  }
+}
+.block1 {// медиа запросы( прямо внутри блока)
+  padding: 1rem;
+  @media screen and (max-width: $mobile) {
+    color: brown;
+  }
+}
+@function multiplyPadding ($value,$value2) {//функция
+  @return $value * $value2
+}
+.block1 {
+  padding: multiplyPadding(5px, 3)
+}

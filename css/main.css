@@ -324,31 +324,52 @@ textarea {
   color: #000;
   padding: 0.2em 0; }
 
-body {
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
 .pet__card {
-  flex-direction: column;
+  font: 20px/24px fantasy;
+    font-weight: bold;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #bdbcbb;
+  flex-direction: column;
+  justify-content: space-around;
+  content: "Foo Bar";
+  background-color: purple;
   width: 300px;
   height: 435px; }
+  .pet__card::after {
+    content: "Foo Bar"; }
   .pet__card .pet-name {
     font-size: 30px; }
+  .pet__card img {
+    border-radius: 10px; }
   .pet__card .btn {
     width: 187px;
     height: 52px;
-    flex-direction: column;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     padding: 15px 45px;
     border: 2px solid #f1CDB3;
-    border-radius: 100px; }
+    border-radius: 100px;
+    font-size: 18px; }
+  .pet__card:hover {
+    cursor: pointer; }
+    .pet__card:hover .btn {
+      background-color: #edbf9d;
+      border: 2px solid transparent;
+      cursor: pointer; }
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.grid {
+  display: grid;
+  height: 400px;
+  grid-template-columns: minmax(200px, 1fr);
+  background: #7e7edb;
+  gap: 10px; }
 
 /*# sourceMappingURL=main.css.map */

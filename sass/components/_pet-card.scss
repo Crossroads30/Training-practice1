@@ -1,0 +1,39 @@
+
+
+.pet__card {
+   font: 20px/24px fantasy {weight: bold;}
+   @include flex ();
+   content: "Foo " + Bar;
+   background-color:  mix(red, blue);
+   width: 300px;
+   height: 435px;
+&::after {
+   content: "Foo " + Bar;
+}
+   .pet-name {
+      font-size: 30px;
+   }
+
+   img {
+      border-radius: 10px;
+   }
+
+   .btn {
+      width: 187px;
+      height: 52px;
+      @include flex ();
+      padding: 15px 45px;
+      border: 2px solid $btn-col;
+      border-radius: 100px;
+      font-size: 18px;
+   }
+
+      &:hover {
+         cursor: pointer;
+         .btn { 
+            background-color: darken($btn-col, 5%);
+            border: 2px solid transparent;
+            cursor: pointer;
+      }
+   }
+}

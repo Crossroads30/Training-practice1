@@ -1,5 +1,6 @@
 @import 'abstracts/variables';
 @import 'vendors/bootstrap';
+@import 'base/base';
 @import 'base/reset';
 @import 'layout/header';
 @import 'components/buttons';
@@ -7,16 +8,3 @@
 @import 'pages/home';
 @import 'themes/theme';
 
-body {
-   @include flex ();
-   @extend align !optional;
-}
-
-.grid {
-   display: grid;
-   height: 400px;
-   grid-template-columns: minmax(200px, 1fr);
-   // grid-auto-rows: 100px;
-   background: rgb(126, 126, 219);
-   gap: 10px;
-}

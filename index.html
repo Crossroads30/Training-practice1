@@ -1,23 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello practice!</title>
-  <link rel="stylesheet" href="css/main.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hello practice!</title>
+   <link rel="stylesheet" href="sass/main.css">
 </head>
+
 <body>
-  <h1>Starting practice!</h1>
-  <div class="pet__card">
-    <img src="assets/images/pets-katrine.png" alt="pet-catrine">
-    <p class="pet-name">Katrine</p>
-    <button class="btn">Learn more</button>
-  </div>
-  <div class="grid">
-   <div class="one">one</div>
-   <div class="two">two</div>
-   <div class="three">three</div>
-  </div>
-</body>
+   <h1 class="title">Starting practice!</h1>
+   <!-- <div class="pet__card">
+      <img src="assets/images/pets-katrine.png" alt="pet-catrine">
+      <p class="pet-name">Katrine</p>
+      <button class="btn">Learn more</button> -->
+   <!-- <div class="main">
+         <div class="slider">
+            <div class="slider-wrapper">
+               <div class="slider-item">
+                  <div class="slider-item-content" style="background-color: aqua;">
+                     1
+                  </div>
+               </div>
+               <div class="slider-item">
+                  <div class="slider-item-content" style="background-color: orange;">
+                     2
+                  </div>
+               </div>
+               <div class="slider-item">
+                  <div class="slider-item-content" style="background-color: greenyellow;">
+                     3
+                  </div>
+               </div>
+               <div class="slider-item">
+                  <div class="slider-item-content" style="background-color: violet;">
+                     4
+                  </div>
+               </div>
+            </div>
+            <a id="prevBtn" class="slider-control slider-control-left" href="#" role="button"></a>
+            <a id="nextBtn" class="slider-control slider-control-right slider-control-show" href="#" role="button"></a>
+         </div> -->
+
+   <body>
+      <div class="wrapper">
+         <div class="slider">
+            <div class="container">
+               <div class="slider__block">
+                  <div class="slider__img">
+                     <img class="art1" src="assets/images/our-friends/pets-charly.png" alt="">
+                     <img class="art2" src="assets/images/our-friends/pets-freddy.png" alt="">
+                     <img class="art3" src="assets/images/our-friends/pets-jennifer.png" alt="">
+                     <img class="art4" src="assets/images/our-friends/pets-katrine.png" alt="">
+                     <img class="art5" src="assets/images/our-friends/pets-scarlet.png" alt="">
+                  </div>
+                  <div class="slider__btn">
+                     <button class="prev">prev</button>
+                     <button class="next">next</button>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+      <script src="./index.js"></script>
+   </body>
+
 </html>

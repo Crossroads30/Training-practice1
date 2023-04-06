@@ -1,7 +1,7 @@
 let sliderWrapper = document.querySelector(".slider-wrapper");
 let sliderElements = document.querySelectorAll(".slider-item");
 
-const sliderItemWidth = sliderElements[0].clientWidth;
+const sliderItemWidth = sliderElements[0].clientWidth * 2;
 let counter = 1;
 
 let translation = 0;
@@ -24,6 +24,10 @@ const nextSlide = function () {
          return;
       }
       draw(timePassed);
+      if (counter > 1){
+         translation = 0;
+      }
+      
    }, 0);
 
    function draw(timePassed) {
@@ -48,8 +52,10 @@ const prevSlide = function () {
          translation = sliderItemWidth * (counter - 2);
          counter--;
          return;
+      } else {
+         draw(timePassed);
       }
-      draw(timePassed);
+      
    }, 0);
 
    function draw(timePassed) {
